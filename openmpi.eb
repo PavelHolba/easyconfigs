@@ -1,6 +1,6 @@
 easyblock = 'ConfigureMake'
 
-name = 'OpenMPI'
+name = 'openmpi'
 version = '5.0.5'
 toolchain = {'name': 'GCC', 'version': '13.3.0'}
 
@@ -9,7 +9,8 @@ description = """OpenMPI is an open-source, high-performance library for paralle
 enabling efficient communication between processes in distributed environments. It is widely 
 used in HPC for running large-scale computations across clusters."""
 
-source_urls = ['https://www.open-mpi.org/software/ompi/v5.0/'] 
+# https://download.open-mpi.org/release/open-mpi/v5.0/openmpi-5.0.5.tar.gz
+source_urls = ['https://download.open-mpi.org/release/open-mpi/v5.0/'] 
 sources = [SOURCE_TAR_GZ]
 checksums = ['5cbefa0780b84f4126743c40cdd6a334b2f0574cd7fd95050fb1ac0ddbb7f0b8']
 
