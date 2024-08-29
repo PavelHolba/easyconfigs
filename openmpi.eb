@@ -1,0 +1,29 @@
+easyblock = 'ConfigureMake'
+
+name = 'OpenMPI'
+version = '5.0.5'
+toolchain = {'name': 'GCC', 'version': '13.3.0'}
+
+homepage = 'https://www.open-mpi.org'
+description = """OpenMPI is an open-source, high-performance library for parallel computing, 
+enabling efficient communication between processes in distributed environments. It is widely 
+used in HPC for running large-scale computations across clusters."""
+
+source_urls = ['https://www.open-mpi.org/software/ompi/v5.0/'] 
+sources = [SOURCE_TAR_GZ]
+checksums = ['5cbefa0780b84f4126743c40cdd6a334b2f0574cd7fd95050fb1ac0ddbb7f0b8']
+
+dependencies = [
+    ('PRRTE', '3.0.5')
+]
+
+sanity_check_paths = {
+    'files': ['?'],
+    'dirs': ['bin', 'lib'],
+}
+
+sanity_check_commands = [
+    '? -version',
+]
+
+moduleclass = 'mpi'
