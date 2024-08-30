@@ -19,12 +19,13 @@ dependencies = [
 ]
 
 sanity_check_paths = {
-    'files': ['?'],
+    'files': ['bin/mpirun','bin/mpicc','bin/ompi_info'],
     'dirs': ['bin', 'lib'],
 }
 
 sanity_check_commands = [
-    '? -version',
+    'ompi_info',
+    'mpirun hostname'
 ]
 
 moduleclass = 'mpi'
