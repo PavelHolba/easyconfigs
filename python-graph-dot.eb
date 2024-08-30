@@ -1,0 +1,33 @@
+easyblock = 'PythonPackage'
+
+name = 'python-graph-dot'
+version = '1.8.2'
+versionsuffix = '-Python-%(pyver)s'
+
+homepage = 'https://pypi.org/project/python-graph-dot/'
+description = """python-graph is a library for working with graphs in Python. This software provides a suitable data structure for 
+representing graphs and a whole set of important algorithms."""
+
+# https://files.pythonhosted.org/packages/2e/a1/447275b946338f0e5b9861f18be7a0423de7d405205dc515b40f7b2d91ba/python-graph-dot-1.8.2.tar.gz
+source_urls = ['https://files.pythonhosted.org/packages/2e/a1/447275b946338f0e5b9861f18be7a0423de7d405205dc515b40f7b2d91ba/']
+sources = [SOURCE_TAR_GZ]
+checksums = ['ea353ff4cfcb9d01efd419de5e5d1c07d15675664a79153da30da786e5c2218e']
+
+toolchain = {'name': 'GCCcore', 'version': '11.2.0'}
+
+dependencies = [
+    ('Python', '3.9.6','-bare')
+]
+
+use_pip = True
+
+options = {'modulename': 'pygraph'}
+
+#sanity_check_paths = {
+#    'files': ['bin/python-graph-core'],
+#    'dirs': ['lib/python%(pyshortver)s/site-packages'],
+#}
+
+#sanity_check_commands = ["python-graph-core"]
+
+moduleclass = 'tools'
