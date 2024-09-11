@@ -3,7 +3,7 @@ easyblock = 'ConfigureMake'
 name = 'MyMan'
 version = '2009-10-30'
 versionsuffix = 'wip'
-toolchain = {'name': 'GCC', 'version': '13.3.0'}
+toolchain = {'name': 'GCC', 'version': '6.3.0'}
 
 homepage = 'https://myman.sourceforge.io/'
 description = """MyMan is a text-mode videogame inspired by Namco's Pac-Man"""
