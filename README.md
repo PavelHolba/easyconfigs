@@ -17,7 +17,7 @@ Easyconfigs from Easybuild tutorial and self induced challenges
    - [x] SOURCE_URLS ... source urls
    - [x] SOURCES ... package name definition
    - [x] DEPENDENCY ... Tcl/8.6.6
-         - not needed
+     - not needed
    - [x] SANITY_CHECK_PATH ... you must check exists binary file
    - [x] MODULECLASS ... choose class
    - [x] rename teplate to MyMan-2009-10-30.eb
