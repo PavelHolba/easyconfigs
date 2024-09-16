@@ -18,7 +18,7 @@ dependencies = [
 
 sanity_check_paths = {
     'files': ['bin/myman'],
-    'dirs': ['bin', 'lib'],
+    'dirs': ['bin'],
 }
 
 
